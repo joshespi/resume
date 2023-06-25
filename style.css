@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+:root {
+  --main-bg-color: #ccc;
+  --theme-white: #fff;
+  --theme-blue: #4682b4;
+}
+body {
+  font-family: "Didact Gothic", sans-serif;
+  /* border-top-left-radius: -10px; */
+}
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1em;
+}
+header {
+  text-align: center;
+}header p {
+    font-size: 1.2em;
+  }
+li {
+  margin: 1em 0;
+}
+aside,
+section {
+  padding: 1em 2em;
+}
+section h2 {
+  border-bottom: 1px solid var(--theme-blue);
+}
+aside img {
+  display: block;
+  margin: 0 auto;
+}
+aside h2 {
+  color: var(--theme-blue);
+}
+@media (min-width: 600px) {
+  body {
+    background-color: var(--main-bg-color);
+  }
+  header {
+    border-radius: 70% 0 0 0;
+    padding: 1em 2em;
+  }
+  header p {
+    margin: unset;font-size: 1.5em;
+  }
+  header,
+  section {
+    background-color: var(--theme-white);
+  }
+  main {
+    display: grid;
+    position: relative;
+    grid-template-columns: 300px 1fr;
+  }
+}
+@media (min-width: 900px) {
+  article h3,
+  article p {
+    display: inline;
+  }
+}
+@media (min-width: 1100px) {
+  header {
+    margin-top: 10vh;
+    margin-left: 300px;
+    text-align: left;
+    padding: 1em 2em;
+    border-bottom: 1px solid var(--theme-blue);
+    border-radius: 75px 0 0 0;
+  }
+  aside {
+    margin-top: -25vh;
+  }
+}
+
+.advanced {
+  list-style: none;
+  margin: unset;
+  padding: unset;
+  display: inline;
+}
+.advanced li {
+  display: inline-block;
+  margin: unset;
+}
+.advanced li::after {
+  content: ", ";
+}
+.advanced li:last-of-type::after {
+  content: unset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media print {
+    header{page-break-after: avoid;}
+    main { page-break-before:avoid; } 
+    /* page-break-after works, as well */
+}
