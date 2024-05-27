@@ -20,9 +20,10 @@ h3 {
 }
 header {
   text-align: center;
-}header p {
-    font-size: 1.2em;
-  }
+}
+header p {
+  font-size: 1.2em;
+}
 li {
   margin: 1em 0;
 }
@@ -49,7 +50,8 @@ aside h2 {
     padding: 1em 2em;
   }
   header p {
-    margin: unset;font-size: 1.5em;
+    margin: unset;
+    font-size: 1.5em;
   }
   header,
   section {
@@ -80,7 +82,10 @@ aside h2 {
     margin-top: -25vh;
   }
 }
-
+.avatar {
+  border-radius: 50%;
+  border: 5px solid var(--theme-blue);
+}
 .advanced {
   list-style: none;
   margin: unset;
@@ -98,19 +103,11 @@ aside h2 {
   content: unset;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 @media print {
-    header{page-break-after: avoid;}
-    main { page-break-before:avoid; } 
-    /* page-break-after works, as well */
+  header {
+    page-break-after: avoid;
+  }
+  main {
+    page-break-before: avoid;
+  }
 }
