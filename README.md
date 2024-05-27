@@ -1,4 +1,2 @@
-# resume
-separating resume out into its own thing
-
+# Josh Espinoza Resume
 hosted at https://resume.iamjoshespinoza.com/
